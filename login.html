@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід | Web-додаток</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen text-gray-800">
+
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">CalcApp</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="hover:text-blue-200">Калькулятор</a>
+                <a href="about.html" class="hover:text-blue-200">Про додаток</a>
+                <a href="profile.html" class="hover:text-blue-200">Профіль</a>
+                <a href="login.html" class="hover:text-blue-200 underline">Вхід</a>
+                <a href="register.html" class="bg-white text-blue-600 px-3 py-1 rounded hover:bg-gray-100">Реєстрація</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Вхід до системи</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your@email.com">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 font-semibold mb-2">Пароль</label>
+                    <input type="password" id="password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="••••••••">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition duration-200">Увійти</button>
+            </form>
+            <p class="text-center mt-4 text-sm text-gray-600">Ще не маєте акаунту? <a href="register.html" class="text-blue-600 hover:underline">Зареєструватись</a></p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 text-center py-4">
+        <p>&copy; 2026 НТУУ КПІ ім. Сікорського. Лабораторна робота №1. Студент групи КВ-32: Клубук Максим</p>
+    </footer>
+
+</body>
+</html>
