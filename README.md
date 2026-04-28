@@ -26,6 +26,7 @@
 
 ## Посилання
 * **Live Demo (GitHub Pages):** https://reinlaught.github.io/web-design/
+* **Звіт (Google Drive):** https://docs.google.com/document/d/1VLcGJYiyaoI542UelJ2qOtKSc_TrPzbjIn6KQ0asbuc/edit?usp=sharing
 
 ---
 *2026 р. НТУУ "КПІ ім. Ігоря Сікорського"*
