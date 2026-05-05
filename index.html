@@ -24,11 +24,25 @@
     <main class="flex-grow container mx-auto px-4 py-8 flex justify-center items-center">
         
         <div class="bg-gray-900 p-6 rounded-2xl shadow-xl w-80">
-            <div class="bg-gray-100 p-4 rounded-lg mb-4 text-right text-3xl font-mono overflow-hidden">
-                0
+            <div class="bg-gray-100 p-4 rounded-lg mb-4 text-right font-mono flex flex-col justify-end min-h-[5rem]">
+                <div id="history-display" class="text-sm text-gray-500 min-h-[1.25rem] mb-1 break-all"></div>
+                <div id="main-display" class="text-3xl break-all">0</div>
+            </div>
+            <div class="flex justify-end mb-3">
+                <label class="text-gray-300 text-sm flex items-center cursor-pointer hover:text-white transition">
+                    <span class="mr-2">Режим програміста</span>
+                    <input type="checkbox" id="prog-mode-toggle" class="w-4 h-4 accent-blue-500 rounded">
+                </label>
+            </div>
+            
+            <div id="prog-buttons" class="hidden grid grid-cols-4 gap-3 mb-4 border-b border-gray-700 pb-4">
+                <button class="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-lg font-bold text-sm transition">HEX</button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-lg font-bold text-sm transition">DEC</button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-lg font-bold text-sm transition">OCT</button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-lg font-bold text-sm transition">BIN</button>
             </div>
             <div class="grid grid-cols-4 gap-3">
-                <button class="bg-gray-300 hover:bg-gray-400 p-3 rounded-lg font-bold text-xl">C</button>
+                <button class="bg-gray-300 hover:bg-gray-400 p-3 rounded-lg font-bold text-xl">AC</button>                
                 <button class="bg-gray-300 hover:bg-gray-400 p-3 rounded-lg font-bold text-xl">±</button>
                 <button class="bg-gray-300 hover:bg-gray-400 p-3 rounded-lg font-bold text-xl">%</button>
                 <button class="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-lg font-bold text-xl">÷</button>
@@ -57,8 +71,10 @@
     </main>
 
     <footer class="bg-gray-800 text-gray-300 text-center py-4">
-        <p>&copy; 2026 НТУУ КПІ ім. Сікорського. Лабораторна робота №1. Студент групи КВ-32: Клубук Максим</p>
+        <p>&copy; 2026 НТУУ КПІ ім. Сікорського. Лабораторна робота №2. Студент групи КВ-32: Клубук Максим</p>
     </footer>
+
+    <script src="js/calculator.js"></script>
 
 </body>
 </html>
